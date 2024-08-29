@@ -10,7 +10,7 @@ This project is a Student Management System built with Streamlit for the fronten
 ### Clone the Repository
 ```bash
 git clone https://github.com/Tanmay1903/student-management.git
-cd task-manager
+cd student-management
 ```
 
 ### Environment Variables

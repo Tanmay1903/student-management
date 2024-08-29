@@ -3,12 +3,13 @@ from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
 import os 
 import json
+from dotenv import load_dotenv
 
-os.environ["OPENAI_API_KEY"] = "<YOUR_OPENAI_API_KEY>"
-# Define the language model (using OpenAI's API)
+load_dotenv()
+
 llm = OpenAI(temperature=0.9)
 
-# Example prompt template
+# Prompt template
 prompt = PromptTemplate(
     input_variables=["instruction"],
     template="""
@@ -63,8 +64,7 @@ def process_instruction(instruction: str) -> dict:
         entities = result.get('entities')
         if isinstance(entities, str):
             entities = json.loads(entities)  # Parse if it's a JSON string
-        
-        # Now 'entities' is guaranteed to be a dictionary
+
         result['entities'] = entities
         print(result, "result")
         return result

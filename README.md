@@ -7,6 +7,12 @@ This project is a Student Management System built with Streamlit for the fronten
 ### Prerequisites
 - Docker and Docker Compose installed on your machine.
 
+### Clone the Repository
+```bash
+git clone https://github.com/Tanmay1903/student-management.git
+cd task-manager
+```
+
 ### Environment Variables
  - Create a .env file in both the student-manager/ and student-manager-backend/ directories with the following content:
    - `student-manager/.env`

@@ -34,3 +34,13 @@ This will build the Docker images for the frontend and backend and start the con
 #### 2. Access the Application
 - Streamlit Frontend: http://localhost:8501
 - Flask Backend: http://localhost:5051
+
+Interact with the application through the Streamlit interface to manage student data.
+
+### Stopping the Application
+To stop the containers, run:
+```bash
+docker-compose down
+```
+
+
